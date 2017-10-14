@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vector.EventController">
+   <children>
+      <Label layoutX="296.0" layoutY="13.0" prefHeight="35.0" prefWidth="225.0" text="Vector Functions 1.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="VectorA_I" layoutX="216.0" layoutY="140.0" prefHeight="25.0" prefWidth="65.0" text="0.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="VectorA_J" layoutX="296.0" layoutY="140.0" prefHeight="25.0" prefWidth="65.0" text="0.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="VectorA_K" layoutX="380.0" layoutY="140.0" prefHeight="25.0" prefWidth="65.0" text="0.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Label layoutX="188.0" layoutY="128.0" text="&lt;">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="281.0" layoutY="128.0" text=",">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="128.0" text="&gt;">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="128.0" text=",">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="133.0" prefHeight="43.0" prefWidth="98.0" text="Vector A">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="208.0" prefHeight="43.0" prefWidth="98.0" text="Vector B">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="205.0" text=",">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="203.0" text="&gt;">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="205.0" text=",">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="203.0" text="&lt;">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="VectorB_I" layoutX="213.0" layoutY="217.0" prefHeight="25.0" prefWidth="65.0" text="0.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+       <TextField fx:id="VectorB_J" layoutX="296.0" layoutY="217.0" prefHeight="25.0" prefWidth="65.0" text="0.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="VectorB_K" layoutX="381.0" layoutY="217.0" prefHeight="25.0" prefWidth="65.0" text="0.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Label layoutX="222.0" layoutY="85.0" text="i">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="323.0" layoutY="85.0" text="j">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="85.0" text="k">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="AddButton" layoutX="55.0" layoutY="317.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="114.0" text="Add " />
+      <Button fx:id="CrossButton" layoutX="55.0" layoutY="404.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="114.0" text="Cross Product" />
+      <Button fx:id="DotButton" layoutX="55.0" layoutY="492.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="114.0" text="Dot Product" />
+      <Label layoutX="248.0" layoutY="501.0" prefHeight="35.0" prefWidth="151.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="48.0" text="Created by Nick Caamano">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="AddResultLabel" layoutX="188.0" layoutY="326.0" prefHeight="35.0" prefWidth="327.0" text="&lt;&gt;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="ResetAll" layoutX="55.0" layoutY="553.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Reset All" />
+      <Button fx:id="AddReset" layoutX="3.0" layoutY="317.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="49.0" text="Reset">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="CrossProductReset" layoutX="3.0" layoutY="404.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="49.0" text="Reset">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="DotProductReset" layoutX="3.0" layoutY="492.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="49.0" text="Reset">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="CrossResultLabel" layoutX="188.0" layoutY="413.0" prefHeight="35.0" prefWidth="327.0" text="&lt;&gt;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="DotResultLabel" layoutX="188.0" layoutY="501.0" prefHeight="35.0" prefWidth="327.0" text="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="VectorAReset" layoutX="478.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Reset">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="VectorBReset" layoutX="478.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Reset">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="581.0" layoutY="94.0" text="Magnitude">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="685.0" layoutY="94.0" text="Normalization">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="MagnitudeA" layoutX="595.0" layoutY="142.0" text="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="MagnitudeB" layoutX="595.0" layoutY="219.0" text="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="NormalizationA" layoutX="663.0" layoutY="142.0" prefHeight="27.0" prefWidth="151.0" text="           &lt;&gt;" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="NormalizationB" layoutX="663.0" layoutY="216.0" prefHeight="27.0" prefWidth="151.0" text="           &lt;&gt;" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <MenuBar prefHeight="25.0" prefWidth="135.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="Close" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="MenuReset" mnemonicParsing="false" text="Reset All" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="About" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="74.0" layoutY="272.0" text="Angle Between Vectors">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="RadianLabel" layoutX="232.0" layoutY="272.0" text="0.0 Radians">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="DegreeLabel" layoutX="352.0" layoutY="272.0" text="0.0 Degrees">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="AddDescription" layoutX="524.0" layoutY="330.0" prefHeight="27.0" prefWidth="288.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="CrossDescription" layoutX="524.0" layoutY="417.0" prefHeight="27.0" prefWidth="288.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="DotDescription" layoutX="524.0" layoutY="505.0" prefHeight="27.0" prefWidth="288.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ResetBoth" layoutX="478.0" layoutY="181.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Reset Both" />
+      <Label layoutX="484.0" layoutY="262.0" text="Projection of B onto A" />
+      <Label layoutX="484.0" layoutY="284.0" text="Projection of A onto B" />
+      <Label fx:id="BontoA" layoutX="634.0" layoutY="262.0" prefHeight="17.0" prefWidth="98.0" />
+      <Label fx:id="AontoB" layoutX="634.0" layoutY="284.0" prefHeight="17.0" prefWidth="98.0" />
+   </children>
+</Pane>

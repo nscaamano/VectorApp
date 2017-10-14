@@ -1,0 +1,14 @@
+Vector Functions To Do
+
+File menu
+Information Window from FileMenu
+Error input
+Angle between
+Vector Visualization
+
+Show the actual calculation in text
+dont allow anything but numbers in textfields
+Add aproximate forms
+Finish about
+
+vector additon
